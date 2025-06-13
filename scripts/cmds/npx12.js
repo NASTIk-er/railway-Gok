@@ -11,7 +11,7 @@ module.exports = {
     category: "no prefix"
   },
 
-  handleEvent: async function ({ api, event, message }) {
+  onChat: async function ({ api, event, message }) {
     const { threadID, messageID, body } = event;
     if (!body) return;
 
