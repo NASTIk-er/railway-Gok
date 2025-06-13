@@ -1,7 +1,4 @@
-
-
 const axios = require("axios");
-
 module.exports = {
   config: {
     name: "npx12",
