@@ -69,8 +69,8 @@ module.exports = {
       ctx.shadowBlur = 5;
 
       // Custom uptime text
-      ctx.fillText("SYSTEM UPTIME", 500, 390);
-      ctx.fillText("──────────────", 500, 430);
+      ctx.fillText("TANVIR-BOT", 500, 390);
+      ctx.fillText("◊─────────────◊", 500, 430);
       ctx.fillText(`BOT UPTIME: ${days}D ${hours}H ${minutes}M ${seconds}S`, 500, 470);
 
       const imagePath = `${__dirname}/uptime_img.png`;
