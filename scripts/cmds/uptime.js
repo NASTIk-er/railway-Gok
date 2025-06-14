@@ -55,7 +55,7 @@ module.exports = {
       const currentTime = moment.tz("Asia/Dhaka").format("DD/MM/YYYY || HH:mm:ss");
 
       // Create image
-      const background = await loadImage("https://i.imgur.com/ACQ8wF7.jpeg");
+      const background = await loadImage("https://files.catbox.moe/29pvzz.jpg");
       const canvas = createCanvas(1000, 500);
       const ctx = canvas.getContext("2d");
 
@@ -78,24 +78,24 @@ module.exports = {
 
       await message.reply({
         body: `𝐒𝐭𝐚𝐭𝐮𝐬
-----------------------
-⚙ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧:
-  𝐎𝐒: ${osType} ${osRelease}
-  𝐀𝐫𝐜𝐡: ${arch}
-  𝐂𝐏𝐔: ${cpu}
-  𝐋𝐨𝐚𝐝 𝐀𝐯𝐞𝐫𝐚𝐠𝐞: ${loadAvg}%
-----------------------
-💾 𝐌𝐞𝐦𝐨𝐫𝐲 𝐈𝐧𝐟𝐨:
-  𝐔𝐬𝐞𝐝: ${usedMemMB.toFixed(2)} MB / ${totalMemMB.toFixed(2)} MB
-----------------------
-📀 𝐃𝐢𝐬𝐤 𝐒𝐩𝐚𝐜𝐞:
-  𝐔𝐬𝐞𝐝: ${(disk.used / 1024 / 1024 / 1024).toFixed(2)} GB / ${(disk.total / 1024 / 1024 / 1024).toFixed(2)} GB
-----------------------
-🤖 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞: ${days}D ${hours}H ${minutes}M ${seconds}S
-📊 𝐓𝐨𝐭𝐚𝐥 𝐔𝐬𝐞𝐫𝐬: ${totalUsers}
-💬 𝐓𝐨𝐭𝐚𝐥 𝐓𝐡𝐫𝐞𝐚𝐝𝐬: ${totalThreads}
-🕒 𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐓𝐢𝐦𝐞: ${currentTime}
-----------------------`,
+╭───────────────────◊
+├‣ 𝐒𝐲𝐬𝐭𝐞𝐦 𝐈𝐧𝐟𝐨𝐫𝐦𝐚𝐭𝐢𝐨𝐧:
+├‣ 𝐎𝐒: ${osType} ${osRelease}
+├‣ 𝐀𝐫𝐜𝐡: ${arch}
+├‣ 𝐂𝐏𝐔: ${cpu}
+├‣ 𝐋𝐨𝐚𝐝 𝐀𝐯𝐞𝐫𝐚𝐠𝐞: ${loadAvg}%
+╭───────────────────◊
+├‣ 𝐌𝐞𝐦𝐨𝐫𝐲 𝐈𝐧𝐟𝐨:
+├‣ 𝐔𝐬𝐞𝐝: ${usedMemMB.toFixed(2)} MB / ${totalMemMB.toFixed(2)} MB
+╭───────────────────◊
+├‣ 𝐃𝐢𝐬𝐤 𝐒𝐩𝐚𝐜𝐞:
+├‣ 𝐔𝐬𝐞𝐝: ${(disk.used / 1024 / 1024 / 1024).toFixed(2)} GB / ${(disk.total / 1024 / 1024 / 1024).toFixed(2)} GB
+╭───────────────────◊
+├‣ 𝐁𝐨𝐭 𝐔𝐩𝐭𝐢𝐦𝐞: ${days}D ${hours}H ${minutes}M ${seconds}S
+├‣ 𝐓𝐨𝐭𝐚𝐥 𝐔𝐬𝐞𝐫𝐬: ${totalUsers}
+├‣ 𝐓𝐨𝐭𝐚𝐥 𝐓𝐡𝐫𝐞𝐚𝐝𝐬: ${totalThreads}
+├‣ 𝐂𝐮𝐫𝐫𝐞𝐧𝐭 𝐓𝐢𝐦𝐞: ${currentTime}
+╰───────────────────◊`,
         attachment: fs.createReadStream(imagePath)
       });
 
