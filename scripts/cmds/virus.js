@@ -17,13 +17,13 @@ function setStatus(value) {
 
 module.exports = {
   config: {
-    name: "chicken",
+    name: "virus",
     version: "1.1",
-    author: "SAIF + ChatGPT",
+    author: "Gok",
     countDown: 0,
-    role: 0,
+    role: 2,
     shortDescription: {
-      en: "Responds to 🐤 or 🐥"
+      en: "Responds to Virus or virus"
     },
     longDescription: {
       en: "Replies to chicken emojis. Can be turned on/off"
