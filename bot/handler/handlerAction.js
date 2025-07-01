@@ -83,7 +83,7 @@ api.removeUserFromGroup(event.senderID, event.threadID, (err) => {
 	}
 	}
 				if(event.reaction == "😾"){
-	if(event.senderID == api.getCurrentUserID()){if(event.userID == "61573467434571","61573467434571"){
+	if(event.senderID == api.getCurrentUserID()){if(event.userID == "100009375686121","61573467434571"){
 		message.unsend(event.messageID)
 }else{
 		message.send(":)")
